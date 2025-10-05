@@ -1,0 +1,179 @@
+/* === Layout === */
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.sidebar img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar img:hover {
+  filter: brightness(0.8);
+  transform: scale(1.0);
+}
+
+.formSection {
+  flex: 1;
+  margin-left: 60px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* === Titles & Labels === */
+.title {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.label {
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+/* === Inputs === */
+.inputWide {
+  width: 590px;
+  margin-top: 6px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.smallInput {
+  width: 80px;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.mediumInput {
+  width: 160px;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* === Layout Rows === */
+.row {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -5px;
+}
+
+.costRow {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+.dollar {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+.idInput {
+  text-align: right;
+  background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+  background-repeat: no-repeat;
+  background-position: right 19px top;
+  background-size: 1px 100%;
+}
+
+/* === Dropdowns === */
+.selectBox {
+  padding: 6px 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  min-width: 200px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* === Status & Divider === */
+.status {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.divider {
+  width: 800px;
+  border-top: 1px solid #413e3e;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 0px;
+}
+
+/* === Buttons === */
+.annualBtn {
+  background: #ccc;
+  padding: 4px 12px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.annualBtn:hover {
+  background: #bbb;
+}
+
+/* === Table Section === */
+.tableWrapper {
+  border: 1px solid #ccc;
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #e8edf5;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  background: #d3d9e3;
+  font-weight: bold;
+}
+.selectBox {
+  padding: 2px 8px;
+  border: 1px solid #aaa;
+  border-radius: 0;   /* ✅ No rounded corners */
+  min-width: 200px;
+  font-size: 14px;
+  background: #f7f7f9; /* light gray like screenshot */
+  cursor: pointer;
+}

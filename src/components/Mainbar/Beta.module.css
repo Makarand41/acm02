@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.sidebar img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.2s ease; /* smooth animation */
+}
+
+.sidebar img:hover {
+  filter: brightness(0.8); /* darker on hover */
+  transform: scale(1.00);  /* slight zoom-in effect */
+}
+
+
+
+.formSection{
+  margin-left: 60px;
+margin-top: 55px;
+}
+
+.title {
+  color: red;
+  font-weight: bold;
+ 
+  
+}
+
+.inputWide {
+  width: 590px;
+ margin-top: 6px;
+}
+  
+
+.divider {
+  width: 100%;;
+  border-top: 1px solid #413e3e;
+  margin-top: 18px;
+  margin-bottom: 18px;  margin-left: 2px;
+}
+
+.idInput {
+  text-align: right;
+   
+  background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+  background-repeat: no-repeat;
+   background-position: right 17px top;   
+  background-size: 1px 100%;     
+}

@@ -1,0 +1,87 @@
+.formSection {
+  margin-left: 150px;
+  margin-top: 55px;
+  padding-bottom: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.inputWide {
+  width: 590px;
+  margin-top: 6px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 0;
+}
+
+.dollar {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  margin-right: 3px;
+}
+
+.idInput {
+  width: 160px;
+  padding: 4px;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  text-align: right;
+
+  background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+  background-repeat: no-repeat;
+  background-position: right 21px top;
+  background-size: 1px 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 12px;
+}
+
+.selectBox {
+  padding: 6px 8px;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  min-width: 200px;
+  font-size: 14px;
+  background: #f7f7f9;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.divider {
+  width: 100%;
+  border-top: 1px solid #413e3e;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.annualBtn {
+  padding: 4px 12px;
+  background: #ccc;
+  border: 1px solid #888;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.annualBtn:hover {
+  background: #bbb;
+}
+
+.footer {
+  margin-bottom: 90px;
+}

@@ -1,0 +1,26 @@
+img{
+    width: 80px;
+    height: 80px;
+}
+
+/* .box1 {
+  display: flex;         
+  justify-content: center; 
+  gap: 10px;                   
+  margin-top: 20px;   
+} */
+.box1 {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.box2{
+    text-align: center;
+}
+
+.box2 p{
+color: #456882
+}

@@ -1,0 +1,146 @@
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.sidebar img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar img:hover {
+  filter: brightness(0.8);
+  transform: scale(1.0);
+}
+
+.formSection {
+  margin-left: 60px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: red;
+  font-weight: bold;
+}
+
+.inputWide {
+  width: 590px;
+  margin-top: 6px;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ✅ New reusable input style */
+.inputBox {
+  padding: 5px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.darkBlueCell {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+  background-color: #b3b3dd;
+  color: black;
+  font-weight: bold;
+}
+
+.fyCell {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+  background-color: #e8e8eeff;
+}
+
+.rowStyle {
+  background-color: #f9f9f9;
+}
+
+.row {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dollar {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+.label {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.smallInput {
+  width: 80px;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.mediumInput {
+  width: 160px;
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.idInput {
+  text-align: right;
+  background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+  background-repeat: no-repeat;
+  background-position: right 19px top;
+  background-size: 1px 100%;
+}
+
+.idLabel {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.status {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.divider {
+  margin-left: 0px;
+  width: 90%;
+  border: none;
+  border-top: 1px solid #413e3e;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.annualBtn {
+  background: #ccc;
+  padding: 2px 10px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  cursor: pointer;
+}

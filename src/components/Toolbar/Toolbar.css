@@ -1,0 +1,85 @@
+.body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.toolbar{
+  background-color:  #e6e4e4;;
+  height: 150px;
+  width: 100%;
+  display: flex;
+}
+
+.vsection {
+  height: 150px;
+  border-right: 2px solid black;
+  width: 840px;              
+  /* overflow-x: auto;          */
+  /* white-space: nowrap;       */
+}
+
+.vtools {
+  display: flex;
+  flex-wrap: nowrap;        /* keep items in one row */
+  gap: 10px;                 /* spacing between icons */
+  padding: 10px;
+}
+
+/* .tool {
+  width: 60px;
+  text-align: center;
+  flex-shrink: 0;           
+} */
+
+.tool {
+  width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  display: flex;               /* Enable flexbox */
+  flex-direction: column;      /* Stack image above text */
+  align-items: center;         /* Center horizontally */
+}
+
+
+
+
+.tool img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vsection-title, .osection-title , .crsection-title{
+  color: #DA1F1F;
+  text-align: center;
+}
+
+
+
+.osection{
+  height: 150px;
+  border-right: 2px solid black;
+  width: 180px;  
+  padding-left: 15px;
+  padding-right: 3px;
+}
+
+.otools {
+  display: flex;
+  flex-wrap: nowrap;        /* keep items in one row */
+  gap: 10px;                 /* spacing between icons */
+  padding: 10px;
+}
+
+.crsection{
+  height: 150px;
+  width: 200px;  
+}
+
+.crtools {
+  display: flex;
+  flex-wrap: nowrap;        /* keep items in one row */
+  gap: 10px;                 /* spacing between icons */
+  padding: 10px;
+}
+
+

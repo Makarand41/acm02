@@ -1,0 +1,9 @@
+.content-container {
+  display: flex; /* Sidebar & main content side by side */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stack Mainbar above MainFooter */
+  flex: 1; /* Take remaining space */
+}

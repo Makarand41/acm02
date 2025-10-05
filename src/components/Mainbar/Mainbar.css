@@ -1,0 +1,57 @@
+.mainbar {
+  display: flex;
+  flex-direction: column; /* ✅ Stack tabs and title vertically */
+  width: 100%;
+}
+
+
+.tab-container {
+  display: flex;
+  width: 100%;
+  font-family: Arial, sans-serif;
+height: 50px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+
+.tab {
+  flex: 1;
+  text-align: center;
+  
+  cursor: pointer;
+  font-weight: 600;
+  color: #121212;
+  background-color: #fdfefb;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #000000;
+  padding: 10px 0; 
+}
+
+.tab:hover{
+   background-color: rgb(179, 179, 221);
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+
+
+
+
+
+
+.icon{
+  display: flex;
+  
+
+}
+
+.BoxA{
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.A1{
+  display: flex;
+  margin-left: 900px;
+}

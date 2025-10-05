@@ -1,0 +1,29 @@
+
+.right-panel {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+  background-color: #ECEFCA;
+  ;
+}
+
+th {
+  background-color: #B6B095;
+  font-weight: bold;
+}
+
+td{
+    background-color: white;
+}

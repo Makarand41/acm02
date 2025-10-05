@@ -1,0 +1,145 @@
+import React from "react";
+import beta from "../../assets/images/vector1/beta.jpg";
+import milestone from "../../assets/images/vector1/milestone.jpg";
+import percent from "../../assets/images/vector1/percent.jpg";
+import rayleigh from "../../assets/images/vector1/rayleigh.jpg";
+import trapezoid from "../../assets/images/vector1/trapezoid.jpg";
+import weibull from "../../assets/images/vector1/weibull.jpg";
+import styles from "./Milestone.module.css";
+
+const Milestone = ({ setActiveSection }) => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.sidebar}>
+        <img src={beta} onClick={() => setActiveSection("beta")} alt="beta" />
+        <img
+          src={weibull}
+          onClick={() => setActiveSection("weibull")}
+          alt="weibull"
+        />
+        <img
+          src={rayleigh}
+          onClick={() => setActiveSection("rayleigh")}
+          alt="rayleigh"
+        />
+        <img
+          src={trapezoid}
+          onClick={() => setActiveSection("trapezoid")}
+          alt="trapezoid"
+        />
+        <img
+          src={percent}
+          onClick={() => setActiveSection("percent")}
+          alt="percent"
+        />
+        <img
+          src={milestone}
+          onClick={() => setActiveSection("milestone")}
+          alt="milestone"
+        />
+      </div>
+
+      <div className={styles.formSection}>
+        <div>
+          <span className={styles.title}>Equation/Value</span>
+          <br />
+          <input
+            type="text"
+            className={styles.inputWide}
+            value="PayUC$ * ISQty"
+            //readOnly
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <span style={{ color: "green" }}>
+            <b>$</b>
+          </span>
+          <label> Approp:</label>
+          <span style={{ marginRight: "20px", marginLeft: "10px" }}>
+            <input type="text" defaultValue="3010" />
+          </span>
+
+          <label>FY:</label>
+          <span style={{ marginRight: "20px", marginLeft: "10px" }}>
+            <input type="text" />
+          </span>
+
+          <label>Units:</label>
+          <span style={{ marginRight: "20px", marginLeft: "10px" }}>
+            <input type="text" />
+          </span>
+        </div>
+
+        <div className={styles.row}>
+          <label className={styles.label}>Start Date:</label>
+          <input type="text" />
+          <label className={styles.label}>Finish Date:</label>
+          <input type="text" />
+        </div>
+
+        {/* Profile ID Dropdown */}
+        <div className={styles.row}>
+          <label className={styles.label}>Profile ID:</label>
+          <select className={styles.selectBox}>
+            <option value=""> </option>
+          </select>
+        </div>
+        {/* Table Section */}
+        <div className={styles.row}>
+          <div className={styles.tableWrapper}>
+            <table className={styles.table}>
+              <thead>
+                <tr>
+                  <th>Milestone</th>
+                  <th>Unique ID</th>
+                  <th>Data Equation</th>
+                  <th>Date</th>
+                  <th>Cumulative Spent(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* Example row (optional, can be left empty) */}
+                {/* <tr>
+              <td>MS1</td>
+              <td>12345</td>
+              <td>PayUC$ * ISQty</td>
+              <td>2025-08-31</td>
+              <td>40%</td>
+            </tr> */}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p className={styles.status}>
+          <b>Status:</b> <span style={{ color: "red" }}>Value missing</span>
+        </p>
+
+        <hr className={styles.divider} />
+
+        <div className={styles.row}>
+          <label>
+            <b>Calculate:</b>
+          </label>
+          <button className={styles.annualBtn}>Annual</button>{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label>
+            <b>Lead/Lag:</b> None
+          </label>
+        </div>
+        <br />
+
+        <div>
+          <label style={{ marginLeft: "-3px" }}>
+            <b>RISK Specification:</b> None
+          </label>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Milestone;
