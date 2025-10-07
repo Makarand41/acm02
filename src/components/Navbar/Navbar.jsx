@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
 
   // 🔒 Hide Navbar only on the login page
-  if (location.pathname === "/login" || location.pathname === "/entry") {
+  if (location.pathname === "/login" || location.pathname === "/entry"  ||  location.pathname === "/register"   ) {
     return null;
   }
 

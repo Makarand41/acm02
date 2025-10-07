@@ -13,6 +13,7 @@ import Entry from "./pages/Entry/Entry";
 // 👇 Added imports
 import Login from "./pages/Login/Login";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import Register from "./pages/Register/Register";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Routes>
           {/* Public route */}
           <Route path="/login" element={<Login />} />
+           <Route path="/register" element={<Register/>} />
 
           {/* Protected routes */}
           <Route
