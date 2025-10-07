@@ -12,8 +12,8 @@ export const AuthProvider = ({ children }) => {
 
   const timeoutRef = useRef(null);
   const ACTIVITY_EVENTS = ["click", "mousemove", "keydown", "scroll", "touchstart"];
-   //const MAX_DURATION = 5 * 60 * 1000; // 5 minutes
-const MAX_DURATION = 30 * 1000; // 30 seconds
+   const MAX_DURATION = 3 * 60 * 1000; // 5 minutes
+//const MAX_DURATION = 30 * 1000; // 30 seconds
 
 
   // Login function called from Login.jsx
