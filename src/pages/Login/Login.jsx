@@ -14,7 +14,7 @@ const Login = () => {
   const { login, isAuthenticated } = useAuth();
 
   useEffect(() => {
-    if (isAuthenticated) navigate("/", { replace: true });
+    if (isAuthenticated) navigate("/entry", { replace: true });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated]);
 
